@@ -1,0 +1,92 @@
+.wrapper {
+    border-radius: 4px;
+    justify-content: center;
+    padding: 6px 8px;
+    user-select: none;
+    cursor: pointer;
+    // font-weight: 700;
+    font-size: 16px;
+    min-width: 100px;
+    border: 1px solid transparent;
+    user-select: none;
+    background-color: transparent;
+
+    +.wrapper {
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+
+}
+
+.primary {
+    min-height: 36px;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--primary);
+    border: none;
+    // margin-right: 16px;
+    // margin-left: 16px;
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #FE2C55;
+    }
+}
+
+.second {
+    padding: 7px;
+    font-weight: 700;
+    border: 1px solid #e3e3e4;
+    background-color: var(--white);
+
+    &:hover {
+        background: var(--hover-background-color);
+    }
+}
+
+.outline {
+    font-weight: 600;
+    border: 1px solid rgba(254, 44, 85, 1);
+    border-radius: 4px;
+    color: rgba(254, 44, 85, 1);
+    background-color: rgba(255, 255, 255, 1);
+
+    &:hover {
+        background-color: rgba(254, 44, 85, 0.06);
+    }
+}
+
+// size button
+
+.small {
+    min-width: 88px;
+    padding: 4px 16px
+}
+
+.large {
+    min-width: 116px;
+    padding: 14px 8px;
+}
+
+.rounded {
+    border: 1px solid rgba(22, 24, 35, .12);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 999px;
+    color: rgba(22, 24, 35, .75);
+    font-weight: 700;
+
+    &:hover {
+        border-color: rgba(22, 24, 35, .2);
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+.icon+.text,
+.text+.icon {
+    margin-left: 8px;
+}

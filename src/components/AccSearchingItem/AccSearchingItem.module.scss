@@ -1,0 +1,26 @@
+.wrapper {
+    padding: 9px 16px;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+
+    &:hover {
+        background-color: var(--hover-background-color);
+    }
+
+    .icon-search {
+        margin-right: 8px;
+        font-size: 15px;
+        color: #606064;
+    }
+
+    .lable-result {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
