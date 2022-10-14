@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import classNames from 'classnames/bind'
 import styles from './Menu.module.scss'
 
@@ -11,7 +12,7 @@ function MenuItem({ data, onClick }) {
     };
     let Comp = 'button';
     if (data.to) {
-    
+
         props.href = data.to;
         Comp = 'a';
     }
@@ -21,5 +22,9 @@ function MenuItem({ data, onClick }) {
             <span>{data.title}</span>
         </Comp>
     );
+}
+MenuItem.propTypes = {
+    data: PropTypes.object,
+    onClick: PropTypes.func
 }
 export default MenuItem
