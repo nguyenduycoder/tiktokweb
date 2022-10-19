@@ -1,0 +1,27 @@
+.container {
+    text-align: center;
+
+    p {
+        color: rgba(22, 24, 35, .75);
+        font-size: 12px;
+        line-height: 17px;
+        text-align: center;
+    }
+
+    cursor: pointer;
+}
+
+
+.wrapper {
+    background-color: rgba(22, 24, 35, .06);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 200ms;
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    font-size: 24px;
+}

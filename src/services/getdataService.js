@@ -1,12 +1,9 @@
-
 import request from "~/utils/httprequest";
 
-
-export const search = async (q, type) => {
+export const getUser = async (type) => {
     try {
-        const res = await request.get('user/search', {
+        const res = await request.get('user', {
             params: {
-                q,
                 type
             }
         })

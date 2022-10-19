@@ -1,0 +1,206 @@
+.tippystyle {
+    z-index: 101;
+}
+
+.wrapper {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    border-radius: 4px;
+    transition: background-color 200ms ease-in-out 0s;
+
+    &:hover {
+        background-color: var(--hover-background-color);
+    }
+}
+
+.avatar-link {
+    .avatar-div {
+        position: relative;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        margin-right: 12px;
+        flex: 0 0 48px;
+        width: 33px;
+        height: 33px;
+    }
+
+    .avatar-span {
+        width: 33px;
+        height: 33px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        white-space: nowrap;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 32px;
+        border-radius: 50%;
+        background-color: rgba(136, 136, 136, 0.5);
+        border-color: rgba(22, 24, 35, .12);
+        border-width: 0.5px;
+        cursor: pointer;
+
+    }
+
+    .avatar-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.info {
+    .name-info {
+        display: flex;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        margin: -2px 0px 0px;
+
+        h4 {
+            color: rgb(22, 24, 35);
+            font-family: "IBM Plex Sans", "SofiaPro", " Arial", "Tahoma", "PingFangSC", "sans-serif";
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            margin-top: -2px;
+            max-width: 260px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .tick-info {
+            .icon-check {
+                margin-left: 4px;
+                color: rgb(32, 213, 236);
+            }
+        }
+    }
+
+
+
+
+
+    .nickname-info {
+        color: rgba(22, 24, 35, 0.75);
+        font-family: "IBM Plex Sans", "ProximaNova", " Arial", " Tahoma", "PingFangSC", "sans-serif";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        max-width: 260px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+.tippy-wrapper {
+    position: relative;
+    width: 320px;
+    box-sizing: border-box;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 12%) 0px 4px 16px;
+    border-radius: 8px;
+    z-index: 94;
+
+    .tippy-lines1 {
+        display: flex;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 12px;
+
+        .avatar-tippy {
+            display: inline-block;
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            font-feature-settings: "tnum";
+            position: relative;
+            overflow: hidden;
+            color: rgb(255, 255, 255);
+            white-space: nowrap;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 32px;
+            border-radius: 50%;
+            background-color: rgba(136, 136, 136, 0.5);
+            width: 44px;
+            height: 44px;
+        }
+
+        .avatar-tippy-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .tippy-lines2 {
+        .icon-check {
+            margin-left: 4px;
+            color: rgb(32, 213, 236);
+        }
+
+        font-family: "IBM Plex Sans",
+        SofiaPro,
+        Arial,
+        Tahoma,
+        PingFangSC,
+        sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .tippy-lines3 {
+        font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .tippy-lines4 {
+        display: flex;
+
+
+        .tippy-likes {
+            margin-left: 8px;
+            display: flex;
+            color: rgba(22, 24, 35, 0.75);
+            font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+            font-size: 17px;
+            line-height: 20px;
+
+        }
+
+        .tippy-following {
+            display: flex;
+            color: rgba(22, 24, 35, 0.75);
+            font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+            font-size: 17px;
+            line-height: 20px;
+
+
+        }
+
+        .tippy-number {
+            margin-right: 8px;
+        }
+    }
+}

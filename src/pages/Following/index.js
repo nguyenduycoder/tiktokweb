@@ -1,4 +1,4 @@
 function Following() {
-    return <h1>following page</h1>
+    return <h1 style={{ height: 2000 }}>following page</h1>
 }
 export default Following
