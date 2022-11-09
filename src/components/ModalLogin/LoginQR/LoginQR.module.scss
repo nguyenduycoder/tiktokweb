@@ -1,0 +1,89 @@
+  .divQRContentBody {
+      display: flex;
+      margin-top: 48px;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      padding: unset;
+  }
+
+  .divtextcontainer {
+      width: 180px;
+  }
+
+  .imagetip {
+      margin-inline-start: 20px;
+      height: 270px;
+  }
+
+  .divcodeimage {
+      width: 180px;
+      height: 180px;
+      position: relative;
+
+      .DivCodeMask {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          width: 180px;
+          height: 180px;
+          top: 0px;
+          background-color: rgba(250, 250, 250, 0.95);
+          border-radius: 12px;
+          padding: 0px 24px;
+          -webkit-box-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          align-items: center;
+      }
+
+      .PCodeTip {
+          font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+          font-weight: 600;
+          line-height: 20px;
+          font-size: 14px;
+      }
+
+      .StyledButtonRefresh {
+          border-width: 1px;
+          border-style: solid;
+          border-radius: 2px;
+          color: rgb(22, 24, 35);
+          border-color: rgba(22, 24, 35, 0.12);
+          background-color: rgb(255, 255, 255);
+          min-width: 74px;
+          min-height: 24px;
+          line-height: 17px;
+          font-weight: 600;
+          display: flex;
+          position: relative;
+          -webkit-box-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          justify-content: center;
+          padding: 6px 8px;
+          user-select: none;
+          cursor: pointer;
+          box-sizing: border-box;
+          font-family: ProximaNova, PingFangSC, sans-serif;
+          margin-top: 27px;
+          font-size: 16px;
+      }
+
+      img {
+          width: 180px;
+          height: 180px;
+      }
+  }
+
+  .divstepcontainer {
+      width: 100%;
+      margin-top: 24px;
+  }
+
+  .pstep {
+      color: rgb(22, 24, 35);
+      font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 4px;
+  }

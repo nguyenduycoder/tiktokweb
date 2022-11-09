@@ -4,12 +4,11 @@ import { NavLink } from 'react-router-dom'
 
 
 import styles from './MenuItem.module.scss'
-import { useWindowDimensions } from '~/config'
+
 
 
 const cx = classNames.bind(styles)
 function SidebarMenuItem({ title, to, icon_notcheck, icon_active, ...passProps }) {
-    const { width } = useWindowDimensions()
     return (
         <div className={cx('wraper')}>
             <NavLink to={to} className={(nav) => cx('nav-menuitem', { active: nav.isActive })} end >

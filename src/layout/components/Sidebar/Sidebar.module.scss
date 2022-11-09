@@ -19,7 +19,7 @@
     width: 356px;
     background: rgba(255, 255, 255, 1);
     position: fixed;
-    z-index: 99;
+    // z-index: 50;
     padding-right: 8px;
 
     &::-webkit-scrollbar {
@@ -170,54 +170,11 @@
     }
 }
 
-.div-footer-container {
-    position: relative;
-    padding-top: 16px;
-    padding-left: 8px;
-
-
-
-
-    .footer-div {
-        margin-bottom: 8px;
-        display: flex;
-        padding-right: 8px;
-
-        .footer-link,
-        span {
-            min-width: none;
-            color: rgba(22, 24, 35, .5);
-            font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 17px;
-            display: inline-block;
-            margin-right: 6px;
-            margin-top: 5px;
-        }
-    }
-}
-
-.footer-content {
-    display: flex;
-
-    .title-content {
-        color: rgba(22, 24, 35, .5);
-        font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 17px;
-        display: inline-block;
-        margin-right: 6px;
-        margin-top: 5px;
-    }
-}
 
 
 .div-content-frame,
 .div-user-container,
-.div-discover-container,
-.div-footer-container {
+.div-discover-container {
     &:before {
         content: "";
         position: absolute;

@@ -1,7 +1,8 @@
 import { Fragment } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { publicRoutes } from '~/routes';
-import { DefaultLayout } from '~/layout';
+import { DefaultLayout, FullLayout } from '~/layout';
+
 
 
 
@@ -14,8 +15,16 @@ function App() {
 
             const Page = res.component;
             let Layout = DefaultLayout;
+            let fullLayout = FullLayout;
             if (res.layout) {
-              Layout = res?.layout;
+              console.log(res)
+              if (res.fulllayout) {
+                fullLayout = res?.fulllayout;
+              }
+              else {
+                Layout = res?.layout;
+              }
+
             } else if (res.layout === null) {
               Layout = Fragment
             }

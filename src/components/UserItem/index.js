@@ -3,17 +3,18 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Tippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import styles from './UserItem.module.scss'
 import Button from '../Button';
-import { useWindowDimensions } from '~/config';
+
 
 const cx = classNames.bind(styles)
-function UserItem({ data }) {
-    const { width } = useWindowDimensions()
+function UserItem({ data, tippyoff }) {
+
     return (
         <div className={cx('tippystyle')}>
             <Tippy
+                visible={tippyoff}
                 interactive
                 placement="bottom"
                 delay={[1000, 0]}
@@ -65,7 +66,8 @@ function UserItem({ data }) {
     );
 }
 UserItem.propTypes = {
-    data: PropTypes.object.isRequired
+    data: PropTypes.object.isRequired,
+    // tippyoff: PropTypes.bool.isRequired
 }
 
 export default UserItem

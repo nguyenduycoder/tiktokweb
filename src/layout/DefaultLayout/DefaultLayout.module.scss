@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .container {
@@ -28,20 +29,4 @@
     flex: 1 1 auto;
 
 
-}
-
-.content {
-    // margin-right: 16px;
-    // margin-left: 458px;
-    // width: 692px;
-    // max-width: 692px;
-    // padding: 24px 0;
-    // position: relative;
-    // right: 0;
-    margin-right: 16px;
-    margin-left: 16px;
-    width: 692px;
-    max-width: 692px;
-    padding: 24px 0px;
-    position: relative;
 }

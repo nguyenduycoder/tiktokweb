@@ -1,0 +1,122 @@
+.wraper-modal {
+    border-radius: 8px;
+    transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+    transform: none;
+    margin: auto;
+    position: relative;
+    max-height: 693px;
+    height: 80%;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+
+    // height: 500px;
+    // width: 500px;
+    // border-color: transparent;
+    .content-modal {
+        width: 483px;
+        height: 100%;
+        padding: 48px 0px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .close-modal {
+        position: absolute;
+        top: 24px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        z-index: 1;
+        right: 24px;
+        width: 24px;
+        height: 24px;
+        background: rgba(22, 24, 35, 0.03);
+    }
+
+    .back-modal {
+        left: 16px;
+        position: absolute;
+        top: 16px;
+        cursor: pointer;
+        transform: unset;
+    }
+
+    .signup-container {
+        color: rgb(22, 24, 35);
+        font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+        height: 64px;
+        border-top: 1px solid rgba(22, 24, 35, 0.12);
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .divlogincontainer {
+        width: 375px;
+        margin: auto;
+        padding: unset;
+    }
+
+    .divhomecontainer {
+        padding: unset;
+    }
+
+    .divtitle {
+        color: rgb(22, 24, 35);
+        font-family: "IBM Plex Sans", SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+        font-size: 32px;
+        margin: 16px auto;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .alink {}
+
+    .divbox {
+        color: rgb(22, 24, 35);
+        font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+        font-weight: 600;
+        border: 1px solid rgba(22, 24, 35, 0.12);
+        font-size: 15px;
+        padding: 0px 12px;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        height: 44px;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 16px;
+        word-break: keep-all;
+        white-space: nowrap;
+        background: rgb(255, 255, 255);
+    }
+
+    .divname {
+        left: 12px;
+        font-size: 20px;
+        position: absolute;
+        display: flex;
+    }
+
+    .divQRContentBody {
+        display: flex;
+        margin-top: 48px;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        padding: unset;
+    }
+
+    .divtextcontainer {
+        width: 180px;
+    }
+}

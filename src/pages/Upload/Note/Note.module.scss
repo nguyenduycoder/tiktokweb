@@ -1,0 +1,294 @@
+ .caption-wrap {
+     margin-bottom: 24px;
+ }
+
+
+ .container-form {
+     outline-style: none;
+     position: relative;
+     flex: 1 1 0%;
+ }
+
+
+
+ .text-container {
+     display: flex;
+     -webkit-box-pack: justify;
+     justify-content: space-between;
+     -webkit-box-align: center;
+     align-items: center;
+ }
+
+ .text-v1 {
+     box-sizing: border-box;
+     margin-block: 0px;
+     font-size: var(--tux-fontSizeP3);
+     line-height: 1.5;
+     font-family: var(--tux-fontFamilyParagraph);
+     font-weight: var(--tux-fontWeightSemibold);
+     color: var(--tux-colorTextPrimary);
+     display: inline;
+ }
+
+ .require-font {
+     font-family: proxima-regular,
+         Arial,
+         Tahoma,
+         PingFangSC,
+         sans-serif,
+         "Segoe UI Emoji",
+         "Noto Emoji";
+     font-weight: 400;
+     font-size: 13px;
+     line-height: 17px;
+     color: rgba(22, 24, 35, 0.5);
+     white-space: pre;
+ }
+
+
+
+ .text-v2 {
+     font-family: proxima-regular, Arial, Tahoma, PingFangSC, sans-serif, "Segoe UI Emoji", "Noto Emoji";
+     font-weight: 400;
+     font-size: 13px;
+     line-height: 17px;
+     color: rgba(22, 24, 35, 0.5);
+     white-space: pre;
+ }
+
+ .note-input {
+     margin-top: 4px;
+ }
+
+ .note-container-v2 {
+     min-height: 46px;
+     position: relative;
+     text-align: center;
+     border: 1px solid rgba(22, 24, 35, 0.12);
+     border-radius: 4px;
+ }
+
+ .note-editor {
+     font-family: proxima-regular, Arial, Tahoma, PingFangSC, sans-serif, "Segoe UI Emoji", "Noto Emoji";
+     font-weight: 400;
+     font-size: 15px;
+     line-height: 18px;
+     cursor: text;
+     width: 100%;
+     position: relative;
+     padding: 0px 80px 0px 16px;
+ }
+
+ .note-draftEditor-alignLeft {
+     position: relative;
+ }
+
+ .note-editorContainer {
+     background-color: rgba(255, 255, 255, 0);
+     border-left: 0.1px solid transparent;
+     position: relative;
+     z-index: 1;
+ }
+
+ .note-public-DraftEditor-content {
+     border-style: none;
+     outline-style: none;
+     padding: 12px 0px;
+     overflow: auto;
+     outline: none;
+     user-select: text;
+     white-space: pre-wrap;
+     overflow-wrap: break-word;
+ }
+
+ .note-DraftStyleDefault {
+     text-align: left;
+     position: relative;
+     white-space: pre-wrap;
+     direction: ltr;
+
+     input {
+         outline: none;
+         user-select: text;
+         white-space: pre-wrap;
+         overflow-wrap: break-word;
+     }
+ }
+
+ .note-icon-stylev1 {
+     position: absolute;
+     width: 20px;
+     height: 20px;
+     margin-left: 8px;
+     top: 12px;
+     cursor: pointer;
+     right: 40px;
+ }
+
+ .note-icon-stylev2 {
+     position: absolute;
+     width: 20px;
+     height: 20px;
+     margin-left: 8px;
+     top: 12px;
+     cursor: pointer;
+     right: 12px;
+ }
+
+ .inputEditable {
+     outline: none;
+     z-index: 5;
+
+
+     .spancheck {
+         color: rgb(254, 44, 85);
+         cursor: pointer;
+         display: inline-block;
+         padding-left: 2px;
+         padding-right: 2px;
+         border-radius: 2px;
+         text-decoration: none;
+     }
+ }
+
+ .container-at2 {
+     width: 100%;
+     position: absolute;
+     z-index: 25;
+     top: 0px;
+     left: 0px;
+     background-color: var(--white);
+
+     .inputfriend-v2 {
+         margin-top: 4px;
+     }
+
+     .input-container-v2 {
+         display: flex;
+         min-height: 46px;
+         border: 1px solid rgba(22, 24, 35, 0.12);
+         border-radius: 4px;
+
+         .search-icon {
+             width: 24px;
+             height: 24px;
+             margin-left: 12px;
+             margin-top: 9px;
+         }
+
+         .close-icon {
+             width: 26px;
+             height: 26px;
+             margin-top: 9px;
+             margin-right: 9px;
+             cursor: pointer;
+         }
+     }
+
+
+     .search-friends {
+         font-family: proxima-regular, Arial, Tahoma, PingFangSC, sans-serif, "Segoe UI Emoji", "Noto Emoji";
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 22px;
+         padding: 12px 10px;
+         flex: 1 1 auto;
+         border-style: none;
+         outline-style: none;
+         word-break: break-word;
+     }
+
+     .content-list {
+         //  position: absolute;
+     }
+
+     .scrollparent {
+         width: 100%;
+         position: relative;
+         max-height: 225px;
+         overflow: auto;
+         background: rgb(255, 255, 255);
+         box-shadow: rgb(34 90 89 / 20%) 2px 0px 20px -20px, rgb(34 90 89 / 20%) 0px 8px 20px -2px, rgb(34 90 89 / 20%) 0px 0px 20px -20px;
+         top: -1px;
+         border-radius: 0px 0px 4px 4px;
+         border-top: 1px solid rgba(22, 24, 35, 0.12);
+         padding: 20px 0px;
+     }
+
+     .container-list {
+         display: flex;
+         -webkit-box-pack: justify;
+         justify-content: space-between;
+     }
+
+     .user-col {
+         width: 49.5%;
+         display: flex;
+         flex-direction: column;
+     }
+
+     .title {
+         color: rgba(22, 24, 35, 0.5);
+         font-family: proxima-regular, Arial, Tahoma, PingFangSC, sans-serif, "Segoe UI Emoji", "Noto Emoji";
+         font-weight: 400;
+         font-size: 15px;
+         line-height: 18px;
+         margin-left: 24px;
+         margin-bottom: 8px;
+     }
+
+     .container-user {
+         height: 68px;
+         padding: 10px 30px 10px 24px;
+         display: flex;
+         cursor: pointer;
+
+         &:hover {
+             background-color: var(--hover-background-color);
+         }
+
+         img {
+             height: 48px;
+             width: 48px;
+             min-width: 48px;
+             border-radius: 50%;
+             display: block;
+         }
+
+         .info-user {
+             display: flex;
+             flex-direction: column;
+             margin-left: 12px;
+             margin-top: 4px;
+             overflow: hidden;
+         }
+
+         .fullname {
+             font-size: 17px;
+             line-height: 20px;
+             font-style: normal;
+             font-weight: 600;
+             text-overflow: ellipsis;
+             overflow: hidden;
+             white-space: nowrap;
+             height: 20px;
+             color: rgb(22, 24, 35);
+         }
+
+         //  font-family: proxima-regular,
+
+
+         .nickname {
+             //  font-family: proxima-regular, Arial, Tahoma, PingFangSC, sans-serif, "Segoe UI Emoji", "Noto Emoji";
+             font-weight: 400;
+             font-size: 14px;
+             line-height: 17px;
+             margin-top: 2px;
+             text-overflow: ellipsis;
+             overflow: hidden;
+             white-space: nowrap;
+             height: 18px;
+             color: rgba(22, 24, 35, 0.5);
+         }
+     }
+ }

@@ -1,0 +1,67 @@
+   .title-container {
+       margin-right: 114px;
+
+       .div-info-user {
+           display: flex;
+           flex-direction: row;
+           -webkit-box-align: center;
+           align-items: center;
+       }
+
+       .link-info {
+           display: flex;
+
+           h3 {
+               font-family: "IBM Plex Sans", SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+               font-weight: 700;
+               font-size: 18px;
+               line-height: 25px;
+               display: inline-block;
+               margin-right: 4px;
+           }
+
+           h4 {
+               font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+               font-weight: 400;
+               font-size: 14px;
+               display: inline-block;
+               line-height: 28px;
+           }
+
+           .icon-check {
+               color: rgb(32, 213, 236);
+           }
+       }
+
+       .text-info {}
+
+       .button-following {
+           right: 0px;
+           position: absolute;
+           top: 28px;
+       }
+
+       .div-title-container {
+           display: inline-block;
+
+           .titlecontent {
+               font-weight: 400;
+           }
+
+           .htag-container {
+               font-weight: 600;
+           }
+       }
+
+       .music-name-content {
+           font-weight: 600;
+           font-size: 16px;
+           line-height: 22px;
+           margin-top: 4px;
+           margin-bottom: 12px;
+
+           .name-content {}
+       }
+
+
+   }

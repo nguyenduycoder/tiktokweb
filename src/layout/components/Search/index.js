@@ -5,12 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark, faMagnifyingGlass, faSpinner } from '@fortawesome/free-solid-svg-icons'
 
 
-import * as searchServices from '~/services/searchService'
+
 import { Wrapper as ProperWrapper } from '~/components/Proper'
 import AccountItem from '~/components/AccountItem'
 import AccSearchingItem from '~/components/AccSearchingItem'
 import styles from './Search.module.scss'
 import { useDebounce } from '~/hook';
+import API from '~/utils/Services';
 
 
 const cx = classNames.bind(styles)
@@ -32,8 +33,9 @@ function Search() {
 
         const callapi = async () => {
             setshowLoading(true)
-            const result = await searchServices.search(debouned, 'less')
-            setsearchResult(result.result)
+            await API.getUserSearch(debouned).then(res => {
+                setsearchResult(res.result)
+            })
             setshowLoading(false)
         }
         callapi();
