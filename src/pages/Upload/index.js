@@ -124,6 +124,7 @@ function Upload() {
             comments: 0,
             htag: null,
             imagecover: srcimage,
+            view: 0,
             src: srcvideo
         }
         console.log(form)

@@ -26,6 +26,8 @@ function VideoContainer({ videosrc, imagecover }) {
     const [duration, setDuration] = useState(0);
     const [modeVolume, setModeVolume] = useState(false);
     const [durationvolume, setDurationVolume] = useState(0);
+    const [mute, setMute] = useState(true);
+    const [autoplay, setAutoplay] = useState(true);
     const [memoryvolume, setMemoryVolume] = useState(() => { return 0 });
     const [size, setSize] = useState(false);
     const videoref = useRef(null)
@@ -33,7 +35,7 @@ function VideoContainer({ videosrc, imagecover }) {
     const options = {
         root: null,
         rootMargin: '0px',
-        threshold: 1.0
+        threshold: 0.8
     }
     const isVisibile = useElementOnScreen(options, videoref)
     useEffect(() => {
@@ -49,18 +51,20 @@ function VideoContainer({ videosrc, imagecover }) {
                 setMode(false)
             }
         }
-    }, [isVisibile, mode])
+    }, [isVisibile])
 
 
     const handlerOnmode = () => {
+
         if (mode) {
             videoref.current.pause();
             setMode(!mode);
+            setMute(false)
+            setAutoplay(false)
         } else {
             videoref.current.play();
             setMode(!mode);
         }
-        // videoref.current.play();
     }
     const handlerPlay = () => {
         vidcontrol.play()
@@ -101,7 +105,9 @@ function VideoContainer({ videosrc, imagecover }) {
         }
         setModeVolume(!modeVolume)
     }
+    const handlerOpenmodal = () => {
 
+    }
     const converttime = secondsToTime(duration)
     const converttiming = secondsToTime(currentTime)
     return (
@@ -114,17 +120,12 @@ function VideoContainer({ videosrc, imagecover }) {
                         loading="lazy"
                         className={cx('img-containaer')}
                     ></img>
-                    <div className={cx('divbasicplayer')}>
+                    <div className={cx('divbasicplayer')} onClick={() => handlerOpenmodal()}>
                         <div className={cx('xgplayer-container')}>
                             <video
                                 ref={videoref}
-                                // playsinline="true"
-                                // x5-playsinline="true"
-                                // webkit-playsinline="true"
-                                // tabindex="2"
-                                muted
-                                autoPlay
-                                autoplay={true}
+                                muted={mute}
+                                autoplay={autoplay}
                                 mediatype="video"
                                 onLoadedData={handleLoadedData}
                                 onTimeUpdate={() => setCurrentTime(videoref.current.currentTime)}
@@ -207,6 +208,7 @@ function VideoContainer({ videosrc, imagecover }) {
                     <FontAwesomeIcon icon={faFlag} className={cx('icon-report')} /> report
                 </p>
             </div>
+
         </div >
     )
 }

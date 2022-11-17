@@ -1,6 +1,5 @@
 .divsidemask {
     position: relative;
-    width: 356px;
     -webkit-flex: 0 0 356px;
     -ms-flex: 0 0 356px;
     flex: 0 0 356px
@@ -16,7 +15,7 @@
     perspective-origin: right top;
     top: 60px;
     bottom: 0;
-    width: 356px;
+
     background: rgba(255, 255, 255, 1);
     position: fixed;
     // z-index: 50;
@@ -33,6 +32,14 @@
             height: 0;
         }
     }
+}
+
+.defaults {
+    width: 356px;
+}
+
+.full {
+    width: 244px;
 }
 
 .content {

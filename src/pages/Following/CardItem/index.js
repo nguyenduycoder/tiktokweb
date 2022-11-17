@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind'
-import { useSelector, /*useDispatch*/ } from 'react-redux'
+// import { useSelector, /*useDispatch*/ } from 'react-redux'
 
 import styles from './CardItem.module.scss'
 import { Link } from "react-router-dom";
@@ -20,7 +20,7 @@ function CardItem(props, ref) {
     useEffect(() => {
         const calldata = async () => {
             await API.getVideobyiduser(props.data.id).then(res => {
-                setDataVideo(res.result)
+                setDataVideo(res.result[0])
             })
         }
         calldata()
@@ -30,7 +30,8 @@ function CardItem(props, ref) {
 
     return (
         <div className={cx('card-item')} onMouseOver={() => props.handerGetID(props.index)}>
-            <Link to={`/@:${props?.data.nickname}`} target="_blank" className={cx('navlink-item')}>
+            <Link to={`/@${props?.data.nickname}`}
+                target="_blank" params={{ data: props.data }} className={cx('navlink-item')}>
                 <div className={cx('div-item')}>
                     <img src={datavideo?.imagecover} alt="coverimg" className={cx('image-cover')}></img>
                     {props.index === props.indexvideo && <div data-e2e="card-background" className={cx('DivBasicPlayerWrapper')}>
